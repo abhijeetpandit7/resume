@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DIR: .
-      FILE: Abhijeet_Resume
+      FILE: resume
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-      - name: resume
+      - name: Resume
         uses: dante-ev/latex-action@latest
         with:
           root_file: ${{ env.FILE }}
